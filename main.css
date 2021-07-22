@@ -20,9 +20,10 @@ nav.social-media i + i {
   margin-left: 10px;
 }
 
-#fb {
-  background-color: rgb(blue);
-}
+/* #fb {
+  color: rgb(blue);
+  background-color: rgb(255, 255, 255)70, 70, 165);
+} */
 
 .menu-button {
   font-size: 10px;
@@ -51,6 +52,7 @@ main {
   height: 200px;
   margin-bottom: 5px;
   position: relative;
+  border: solid white 8px;
 }
 
 #image-overlay {
@@ -67,15 +69,15 @@ main {
 #image-background {
   background-image: url("./assets/top-image.png");
   height: 100%;
-  background-size: 125%;
+  background-size: 130%;
   background-position-x: -10px;
-  background-position-y: -125px;
+  background-position-y: -80px;
   z-index: 10;
 }
 .logo {
   position: absolute;
-  width: 250px;
-  top: 40px;
+  width: 275px;
+  top: 20px;
   left: 20px;
   z-index: 13;
 }
@@ -83,37 +85,83 @@ main {
 .cards {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .card {
   border: solid 1px black;
   width: 200px;
   height: 200px;
+  text-align: center;
 }
 
 #card1 {
-  background-color: rgb(231, 231, 162);
+  background-color: rgb(255, 255, 255);
 }
 
 #card2 {
-  background-color: rgb(162, 231, 216);
+  background-color: rgb(255, 255, 255);
 }
 
 #card3 {
-  background-color: rgb(250, 185, 132);
+  background-color: rgb(255, 255, 255);
+}
+
+#read {
+  color: red;
+  font-weight: bold;
 }
 
 .mosaic {
   position: relative;
   border: solid black 2px;
-  height: 200px;
-  width: 200px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "lance rodney tommy"
+    "steve steve tommy";
+  grid-gap: 5px;
+  margin-top: 20px;
 }
 
-#skater1 {
+#lance {
+  background-image: url("./assets/Lance.png");
+  background-size: 300px;
+  background-position-x: -32px;
+  border: 4px solid white;
+}
+
+#rodney {
+  background-image: url("./assets/Rodney.png");
+  background-size: 300px;
+  background-position-x: -20px;
+  border: 4px solid white;
+}
+
+#tommy {
+  background-image: url("./assets/Tommy.png");
+  background-size: 310%;
+  background-position-x: -333px;
+  background-position-y: -13px;
+  border: 4px solid white;
+  grid-area: tommy;
+}
+
+#steve {
+  background-image: url("./assets/Steve.png");
+  background-size: 110%;
+  background-position-y: -40px;
+  border: 4px solid white;
+  grid-area: steve;
+}
+
+/* #skater1 {
   width: 100%;
   height: 100%;
   background-image: url("./assets/sk8er-1.png");
+  position: right;
 }
 
 #skater2 {
@@ -132,4 +180,8 @@ main {
   width: 100%;
   height: 100%;
   background-image: url("./assets/sk8er-4.png");
+} */
+
+body {
+  background: url("./assets/bg.jpg");
 }
