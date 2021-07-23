@@ -201,16 +201,12 @@ main {
 }
 
 input {
-  height: 200px;
+  position: absolute;
+  right: 0;
+  /* height: 200px;
   width: 100%;
-  margin-top: 14px;
+  margin-top: 14px; */
 }
-
-/* h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-/* } */
 
 /* #skater1 {
   width: 100%;
@@ -241,3 +237,50 @@ body {
   background: url("./assets/bg.jpg");
   background-size: 100%;
 }
+
+/* .contact-container {
+  border: solid 4px yellow;
+  background: white;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  position: relative;
+} */
+
+h1 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 10px;
+  justify-content: left;
+}
+
+/* .submit {
+  background-color: red;
+  color: white;
+  border: black solid 1px;
+  display: inline-block;
+}
+
+#message-field {
+  top: 100px;
+  height: 100px;
+}
+
+#email-field {
+  top: 70px;
+}
+
+#name-field {
+  top: 42px;
+} */
+
+/* .contact-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  border: 2px yellow;
+  height: 100h;
+} */
